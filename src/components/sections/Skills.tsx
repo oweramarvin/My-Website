@@ -58,7 +58,7 @@ export default function Skills() {
       (entries) => {
         if (entries[0].isIntersecting) setAnimate(true);
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     const element = document.getElementById("skills");
@@ -101,7 +101,9 @@ export default function Skills() {
                 className="rounded-lg card-hover transition-all duration-300 overflow-hidden"
                 style={{
                   background: colors.background.card.skills,
-                  boxShadow: isExpanded ? colors.glow.cardHover : colors.glow.card,
+                  boxShadow: isExpanded
+                    ? colors.glow.cardHover
+                    : colors.glow.card,
                   cursor: "pointer",
                 }}
                 onClick={() => toggleGroup(groupIdx)}
@@ -113,14 +115,14 @@ export default function Skills() {
                 >
                   <h3
                     className="text-2xl font-bold"
-                    style={{ color: colors.text.title }}
+                    style={{ color: colors.skills.title }}
                   >
                     {group.category}
                   </h3>
                   <span
                     className="transition-transform duration-300"
                     style={{
-                      transform: isExpanded ? "rotate(45deg)" : "rotate(0deg)",
+                      transform: isExpanded ? "rotate(135deg)" : "rotate(0deg)",
                       color: colors.text.subtitle,
                       fontSize: "1.5rem",
                     }}
@@ -133,7 +135,9 @@ export default function Skills() {
                 <div
                   className={`transition-all duration-500 px-6 sm:px-8 overflow-hidden`}
                   style={{
-                    maxHeight: isExpanded ? `${group.skills.length * 50 + 20}px` : "0px",
+                    maxHeight: isExpanded
+                      ? `${group.skills.length * 100 + 20}px`
+                      : "0px",
                   }}
                 >
                   <div className="space-y-4 mt-4 mb-6">
@@ -142,7 +146,7 @@ export default function Skills() {
                         <div className="flex justify-between items-center mb-2">
                           <span
                             className="font-medium"
-                            style={{ color: colors.text.title }}
+                            style={{ color: colors.skills.skillName }}
                           >
                             {skill.name}
                           </span>
@@ -156,7 +160,10 @@ export default function Skills() {
 
                         <div
                           className="w-full rounded-full h-3 overflow-hidden"
-                          style={{ backgroundColor: colors.skills.progressBarBackground }}
+                          style={{
+                            backgroundColor:
+                              colors.skills.progressBarBackground,
+                          }}
                         >
                           <div
                             className={`h-full rounded-full transition-all duration-1000 ease-out`}

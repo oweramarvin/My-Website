@@ -1,37 +1,19 @@
-/**
- * Premium Dark Color Palette
- * Navy, Burgundy, and Gold Theme
- * All colors, gradients, borders, and effects centralized here
- */
 
 export const colors = {
-  // ======================
-  // CORE BRAND COLORS
-  // ======================
   brand: {
-    darkNavy: "#1A1A1D",        // Primary dark base
-    charcoal: "#1A1A1D",        // Alternative name
-    navy: "#2E4057",            // Deep navy for backgrounds
-    burgundy: "#8B0000",        // Deep burgundy accent
-    gold: "#C5A880",            // Premium gold
-    mutedGray: "#A0A0A0",      // Muted text/gray
+    darkNavy: "#1A1A1D",
+    charcoal: "#1A1A1D",
+    navy: "#2E4057",
+    burgundy: "#8B0000",
+    gold: "#C5A880",
+    mutedGray: "#A0A0A0",
   },
 
-  // ======================
-  // BACKGROUND COLORS & GRADIENTS
-  // ======================
   background: {
-    // Hero section
-    hero: {
-      gradient: `linear-gradient(135deg, #1A1A1D 0%, #2E4057 50%, rgba(197,168,128,0.15) 100%)`,
-      overlay: "rgba(26,26,29,0.95)",
-    },
-
-    // Section backgrounds
     section: {
       primary: `linear-gradient(to bottom, #1A1A1D, #2E4057)`,
       secondary: `linear-gradient(to bottom, #2E4057, #1A1A1D)`,
-      tertiary: "#1F2A38", // Subtle dark for alternating sections
+      tertiary: "#1F2A38",
     },
 
     // Card backgrounds
@@ -57,12 +39,12 @@ export const colors = {
   // TYPOGRAPHY COLORS
   // ======================
   text: {
-    title: "#F5F5F5",          // Off-white for main headings
-    subtitle: "#C5A880",        // Gold for subtitles and accents
-    body: "#E5E5E5",            // Soft white for body text
-    muted: "#A0A0A0",           // Muted gray for secondary text
-    accent: "#C5A880",          // Gold accent text
-    burgundy: "#8B0000",        // Burgundy accent text
+    title: "#f5f5f5", 
+    subtitle: "#C5A880", 
+    body: "#E5E5E5",
+    muted: "#A0A0A0", 
+    accent: "#C5A880", 
+    burgundy: "#8B0000", 
   },
 
   // ======================
@@ -85,7 +67,7 @@ export const colors = {
     accent: {
       background: `linear-gradient(135deg, #8B0000 0%, #6B0000 100%)`,
       backgroundHover: `linear-gradient(135deg, #A00000 0%, #8B0000 100%)`,
-      text: "#F5F5F5",
+      text: "#f5f5f5",
     },
   },
 
@@ -93,10 +75,10 @@ export const colors = {
   // BORDERS & DIVIDERS
   // ======================
   border: {
-    subtle: "rgba(197,168,128,0.25)",    // Soft gold border
-    accent: "#C5A880",                    // Gold accent border
-    burgundy: "rgba(139,0,0,0.5)",       // Burgundy border
-    navy: "rgba(46,64,87,0.8)",          // Navy border
+    subtle: "rgba(197,168,128,0.25)",   
+    accent: "#C5A880",                   
+    burgundy: "rgba(139,0,0,0.5)",       
+    navy: "rgba(46,64,87,0.8)",        
     divider: `linear-gradient(to right, transparent, #C5A880, transparent)`,
     dividerBurgundy: `linear-gradient(to right, transparent, rgba(139,0,0,0.6), transparent)`,
   },
@@ -105,21 +87,21 @@ export const colors = {
   // ICONS
   // ======================
   icon: {
-    default: "#C5A880",         // Gold icons
-    muted: "#A0A0A0",           // Subtle gray icons
-    hover: "#D6BE9A",           // Lighter gold on hover
-    burgundy: "#8B0000",        // Burgundy icons
+    default: "#C5A880", 
+    muted: "#A0A0A0",  
+    hover: "#D6BE9A",   
+    burgundy: "#8B0000",
   },
 
   // ======================
   // GLOWS & SHADOWS
   // ======================
   glow: {
-    soft: "0 0 30px rgba(197,168,128,0.35)",      // Soft gold glow
-    strong: "0 0 60px rgba(197,168,128,0.5)",    // Strong gold glow
-    burgundy: "0 0 40px rgba(139,0,0,0.45)",     // Burgundy glow
-    card: "0 8px 32px rgba(0, 0, 0, 0.4)",      // Card shadow
-    cardHover: "0 12px 48px rgba(197,168,128,0.2)", // Card hover glow
+    soft: "0 0 30px rgba(197,168,128,0.35)",  
+    strong: "0 0 60px rgba(197,168,128,0.5)", 
+    burgundy: "0 0 40px rgba(139,0,0,0.45)",  
+    card: "0 8px 32px rgba(0, 0, 0, 0.4)",  
+    cardHover: "0 12px 48px rgba(197,168,128,0.2)", 
   },
 
   // ======================
@@ -172,16 +154,19 @@ export const colors = {
     cardBackground: `linear-gradient(135deg, rgba(46,64,87,0.85) 0%, rgba(26,26,29,0.9) 100%)`,
     cardBorder: {
       default: "rgba(197,168,128,0.3)",
-      active: "#8B0000",
+      active: "rgb(126, 108, 82)",
     },
-    companyName: "#8B0000",
+    title: "rgb(197, 168, 128)",
+    companyName: "#f5f5f5",
     year: "#A0A0A0",
   },
 
   skills: {
+    title: "#f5f5f5",
+    skillName: "rgb(255, 227, 187)",
     progressBarBackground: "rgba(197,168,128,0.2)",
     progressBarFill: `linear-gradient(to right, #8B0000, #C5A880)`,
-    percentage: "#8B0000",
+    percentage: "rgb(197, 168, 128)",
   },
 
   projects: {

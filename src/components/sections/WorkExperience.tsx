@@ -78,7 +78,8 @@ export default function WorkExperience() {
                   openId === job.id
                     ? colors.workExperience.cardBorder.active
                     : colors.workExperience.cardBorder.default,
-                boxShadow: openId === job.id ? colors.glow.cardHover : colors.glow.card,
+                boxShadow:
+                  openId === job.id ? colors.glow.cardHover : colors.glow.card,
               }}
             >
               <button
@@ -98,7 +99,7 @@ export default function WorkExperience() {
                   <div className="flex-1">
                     <h3
                       className="text-xl font-bold mb-2"
-                      style={{ color: colors.text.title }}
+                      style={{ color: colors.workExperience.title }}
                     >
                       {job.title}
                     </h3>
@@ -108,7 +109,10 @@ export default function WorkExperience() {
                     >
                       {job.company}
                     </p>
-                    <p className="text-sm" style={{ color: colors.workExperience.year }}>
+                    <p
+                      className="text-sm"
+                      style={{ color: colors.workExperience.year }}
+                    >
                       {job.year}
                     </p>
                   </div>

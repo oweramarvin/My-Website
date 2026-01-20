@@ -24,7 +24,7 @@ export default function Hero() {
     <section
       id="hero"
       className="min-h-screen flex items-center justify-center relative section-padding pt-24"
-      style={{ background: colors.background.hero.gradient }}
+      style={{ background: colors.background.section.primary }}
     >
       <div className="container-max text-center">
         <div
@@ -34,17 +34,21 @@ export default function Hero() {
         >
           {/* Profile Image */}
           <div className="mb-8 flex justify-center">
-            <div className="relative">
+            <div className="relative group">
+              {/* Glow Aura */}
               <div
-                className="absolute inset-0 rounded-full blur-2xl opacity-50 animate-pulse"
+                className="absolute inset-0 rounded-full blur-2xl opacity-50 transition-all duration-700 group-hover:opacity-80 group-hover:scale-110"
                 style={{
                   background: colors.gradient.heroGlow,
                 }}
               ></div>
+
+              {/* Profile Image */}
               <img
                 src={profileImg}
                 alt="Marvin Owera"
-                className="relative w-48 h-48 sm:w-56 sm:h-56 rounded-full object-cover border-4 shadow-2xl mx-auto"
+                className="relative w-48 h-48 sm:w-56 sm:h-56 rounded-full object-cover border-4 shadow-2xl mx-auto
+                 transition-all duration-700 group-hover:scale-105"
                 style={{
                   borderColor: colors.border.accent,
                   boxShadow: colors.glow.soft,
@@ -55,13 +59,13 @@ export default function Hero() {
 
           {/* Name and Title */}
           <h1
-            className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-4"
+            className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-2"
             style={{ color: colors.text.title }}
           >
             <span className="text-gradient">Marvin Owera</span>
           </h1>
           <h2
-            className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-6"
+            className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4"
             style={{ color: colors.text.subtitle }}
           >
             Software Developer
@@ -69,7 +73,7 @@ export default function Hero() {
 
           {/* Summary */}
           <p
-            className="text-lg sm:text-xl max-w-3xl mx-auto mb-10 leading-relaxed"
+            className="text-lg sm:text-xl max-w-4xl mx-auto mb-10 leading-relaxed"
             style={{ color: colors.text.body }}
           >
             I am a multi-skilled software professional with experience in ERP

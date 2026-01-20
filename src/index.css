@@ -24,7 +24,7 @@
 
   .text-gradient {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(to right, #C5A880, #8B0000);
+    background-image: linear-gradient(to right, #C5A880, #b10909); /* #8B0000 */
   }
 
   .card-hover {

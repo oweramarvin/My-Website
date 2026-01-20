@@ -112,15 +112,25 @@ export default function Education() {
 
                 {/* Content Card */}
                 <div
-                  className={`flex-1 rounded-2xl p-6 transition-all duration-700 ${
+                  className={`flex-1 rounded-2xl p-6 transition-all duration-700 hover:-translate-y-1 ${
                     visibleItems.includes(index)
                       ? "opacity-100 translate-x-0"
                       : "opacity-0 -translate-x-12"
                   }`}
                   style={{
-                    background: colors.background.card.education,
+                    background: colors.background.card.default,
                     border: `1px solid ${colors.border.subtle}`,
                     boxShadow: colors.glow.card,
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background =
+                      colors.background.card.hover;
+                    e.currentTarget.style.boxShadow = colors.glow.cardHover;
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background =
+                      colors.background.card.default;
+                    e.currentTarget.style.boxShadow = colors.glow.card;
                   }}
                 >
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
